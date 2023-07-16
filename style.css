@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.cards {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+}
+
+.title-section {
+    font-size: 35px;
+    margin: 0 0 30px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.service-one {
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 4px;
+    transition: all .3s ease;
+}
+
+.content .fab {
+    font-size: 40px;
+    text-align: center;
+    margin: 16px 0;
+}
+
+.content .fab img {
+    max-width: 3rem;
+}
+
+.content>* {
+    flex: 1 1 100%;
+}
+
+.text .title-card {
+    font-size: 20px;
+    margin: 16px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.text p {
+    font-size: 15px;
+    margin: 16px 0;
+}
+
+.content .button {
+    background: black;
+    padding: 15px 0;
+    border-radius: 25px;
+    transition: all .3s ease-in-out;
+}
+
+.content .button a {
+    text-decoration: none;
+    color: white;
+    transform: uppercase;
+}
+
+.content .button:hover {
+    border-radius: 4px;
+    transition: all .3s ease-in-out;
+}
+
+
+/* Hover on Field for section 1 */
+
+.content:hover {
+    color: white;
+}
+
+.content:hover .button {
+    background-color: white;
+    border-color: white;
+}
+
+.content-1:hover {
+    background-color: #1DA1F2;
+}
+
+.content-1:hover a {
+    color: #1DA1F2;
+}
+
+.content-2:hover {
+    background-color: #E1306C;
+}
+
+.content-2:hover a {
+    color: #E1306C;
+}
+
+.content-3:hover {
+    background-color: #ff0000;
+}
+
+.content-3:hover a {
+    color: #ff0000;
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+    .service-one {
+        flex-direction: column;
+    }
+}
